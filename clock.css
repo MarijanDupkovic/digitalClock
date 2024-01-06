@@ -1,6 +1,5 @@
 @font-face {
-    font-family: 'digitaldream';
-    /* Gewünschter Name */
+    font-family: 'salsa';
     src: url('./fonts/Salsa-Regular.ttf') format('truetype');
 
 }
@@ -11,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'digitaldream' !important;
+    font-family: 'salsa' !important;
 }
 
 .clock {
@@ -31,7 +30,7 @@
     position: relative;
     border-style: groove groove groove groove;
     border-radius: 10px;
-    filter: brightness(1.5) saturate(1.5) contrast(1.5) blur(1px);
+    filter: brightness(1.5) saturate(1.5) contrast(1.5) blur(3px);
     z-index: -1;
     width: 500px;
     height: 200px;
