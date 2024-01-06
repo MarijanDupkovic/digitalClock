@@ -8,20 +8,10 @@ let changeBorderTimer = 60000;
 function init() {
     setInterval(updateClock, 1000);
     setInterval(changeColor, 5000);
-    animate();
+    document.getElementById('border').classList.add('animate');
 
 }
-function animate() {
-    document.getElementById('border').classList.add('animate');
-    setTimeout(function () {
-        document.getElementById('border').classList.remove('animate');
-    }, changeBorderTimer);
-    document.getElementById('border').classList.add('animateReverse');
-    setTimeout(function () {
-        document.getElementById('border').classList.remove('animateReverse');
-    }, changeBorderTimer);
-    animate();
-}
+
 
 function updateClock() {
     setHour();
